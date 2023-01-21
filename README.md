@@ -1,8 +1,7 @@
-# Incomplete Utterance Rewriting <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "25" align=center />
+## How Well Apply Simple MLP to Incomplete Utterance Rewriting? <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "20" align=center />
 
 
 
-The official pytorch implementation of our paper [How Well Apply Simple MLP to Incomplete Utterance Rewriting?]
 
 
 
