@@ -109,7 +109,8 @@ The above script will generate a file `model.tar.gz.json` which records the deta
     "loss": 0.018303699255265087
 }
 ```
-Next, we will provide all pre-trained models to reproduce results reported in our paper. We recommend you to download them and put them into the folder `pretrained_weights` and run commands like below:
+Next, we will provide all pre-trained models to reproduce results reported in our paper.
+
 
 ## Pre-trained Models
 
