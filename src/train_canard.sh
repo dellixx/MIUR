@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export model_file=../1_checkpoints/canard
+export model_file=../checkpoints/canard
 export config_file=../configs/canard.jsonnet
 export train_data_path=../dataset/CANARD/train.txt
 export validation_data_path=../dataset/CANARD/dev.txt

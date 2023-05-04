@@ -1,6 +1,17 @@
-## How Well Apply Simple MLP to Incomplete Utterance Rewriting? <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "20" align=center />
+<h2 align="center">
+ How Well Apply Simple MLP to Incomplete Utterance Rewriting?  <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "20" align=center />
+</h2>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ACL-2023-brightgreen">
+  <a href = '' target='_blank'><img src="http://img.shields.io/badge/Paper-PDF-red.svg"></a>
+  <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg">
+</p>
 
 
+<p align="center">
+Codes for the paper How Well Apply Simple MLP to Incomplete Utterance Rewriting?  accepted by the ACL 2023.
+</p>
 
 
 
@@ -11,6 +22,7 @@
 - [Download and Preprocess Dataset](#data)
 - [Train Model](#train)
 - [Evaluate Model](#evaluate)
+- [Pre-trained Models](#pre-trained-models)
 
 
 ## Requirement
@@ -55,7 +67,6 @@ Although we cannot provide dataset resources (copyright issue) in our repo, we p
 
 
 
-
 ## Train
 
 You could train models on different datasets using `*.sh` files under the `src` folder.  For example, you could train `MIUR` on `Restoration-200K (multi)` by running the following command under the `src` folder as:
@@ -74,3 +85,38 @@ Once a model is well trained, `allennlp` will save a compressed model zip file w
 ```concolse
 python evaluate.py --model_file model.tar.gz --test_file ../dataset/Multi/test.txt
 ```
+
+The above script will generate a file `model.tar.gz.json` which records the detailed performance. For example, the performance of `MIUR` on `Restoration-200K` is:
+```json
+{
+    "ROUGE": 0.895832385848569,
+    "_ROUGE1": 0.9262545735851855,
+    "_ROUGE2": 0.8578286223419522,
+    "EM": 0.510384012539185,
+    "_P1": 0.7645602605863192,
+    "_R1": 0.6377567655689599,
+    "F1": 0.6954254562692581,
+    "_P2": 0.6270252754374595,
+    "_R2": 0.5279672578444747,
+    "F2": 0.5732484076433121,
+    "_P3": 0.543046357615894,
+    "_R3": 0.4591725867112411,
+    "F3": 0.49759985508559007,
+    "_BLEU1": 0.9300601956358164,
+    "_BLEU2": 0.9015189890585196,
+    "_BLEU3": 0.8741648040269356,
+    "BLEU4": 0.8467568893283197,
+    "loss": 0.018303699255265087
+}
+```
+Next, we will provide all pre-trained models to reproduce results reported in our paper. We recommend you to download them and put them into the folder `pretrained_weights` and run commands like below:
+
+## Pre-trained Models
+
+
+| Dataset | Config | Pretrained_Weights |
+| :---: | :---: | :---: |
+| Multi (Restoration-200K) | multi.jsonnet | [multi.tar.gz](https://drive.google.com/file/d/1uRrbpqOw1Nga1maSnX0gWF1kSp0ncB48/view?usp=share_link) |
+| Rewrite | rewrite.jsonnet | [rewrite.tar.gz](https://drive.google.com/file/d/1zxUzAeZcktGprjl2mcg00GPx-jEGWpN-/view?usp=share_link)|
+| CANARD | canard.jsonnet | [canard.tar.gz](https://drive.google.com/file/d/14ZDIUkZi8UqoIvtv6lJJMJvQQ_eJrYPp/view?usp=share_link) |
+

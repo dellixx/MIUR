@@ -65,7 +65,6 @@ class MLPMixer(nn.Module):
         self.layer_norm = nn.LayerNorm(dim)
 
     def forward(self, x):
-        # x = x.squeeze()
         for mixer_block in self.mixer_blocks:
             x = mixer_block(x)
         x = self.layer_norm(x)

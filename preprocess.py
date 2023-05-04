@@ -185,11 +185,11 @@ def unified_dataset_format(dataset_id):
 
 
 if __name__ == '__main__':
-    # arg_parser = argparse.ArgumentParser()
-    # arg_parser.add_argument("--dataset", required=True,
-    #                         choices=['Task', 'Rewrite', 'Multi', "CANARD"], type=str,
-    #                         help="Please specify a dataset you want to process")
-    # parsed_args = arg_parser.parse_args()
-    # unified_dataset_format(parsed_args.dataset)
-    unified_dataset_format("Multi")
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument("--dataset", required=True,
+                            choices=['Task', 'Rewrite', 'Multi', "CANARD"], type=str,
+                            help="Please specify a dataset you want to process")
+    parsed_args = arg_parser.parse_args()
+    unified_dataset_format(parsed_args.dataset)
+    # unified_dataset_format("Multi")
 

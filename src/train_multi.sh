@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export model_file=../1_checkpoints/multi
+export model_file=../checkpoints/multi
 export config_file=../configs/multi.jsonnet
 export train_data_path=../dataset/Multi/train.txt
 export validation_data_path=../dataset/Multi/valid.txt
