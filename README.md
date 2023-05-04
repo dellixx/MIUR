@@ -120,3 +120,8 @@ Next, we will provide all pre-trained models to reproduce results reported in ou
 | Rewrite | rewrite.jsonnet | [rewrite.tar.gz](https://drive.google.com/file/d/1zxUzAeZcktGprjl2mcg00GPx-jEGWpN-/view?usp=share_link)|
 | CANARD | canard.jsonnet | [canard.tar.gz](https://drive.google.com/file/d/14ZDIUkZi8UqoIvtv6lJJMJvQQ_eJrYPp/view?usp=share_link) |
 
+
+
+#### Acknowledgement
+
+We refer to the code of [RUN](https://github.com/microsoft/ContextualSP/tree/master/incomplete_utterance_rewriting). Thanks for their contributions.
