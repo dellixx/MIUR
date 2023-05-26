@@ -83,7 +83,7 @@ You could train models on different datasets using `*.sh` files under the `src` 
 Once a model is well trained, `allennlp` will save a compressed model zip file which is usually named after `model.tar.gz` under the checkpoint folder. Our evaluation is based on it. We provide a evaluate file under `src` folder, and you could evaluate a model file by running the following command:
 
 ```concolse
-python evaluate.py --model_file model.tar.gz --test_file ../dataset/Multi/test.txt
+python evaluate.py --model_file ../checkpoints/multi/model.tar.gz --test_file ../dataset/Multi/test.txt
 ```
 
 The above script will generate a file `model.tar.gz.json` which records the detailed performance. For example, the performance of `MIUR` on `Restoration-200K` is:
@@ -109,8 +109,11 @@ The above script will generate a file `model.tar.gz.json` which records the deta
     "loss": 0.018303699255265087
 }
 ```
-Next, we will provide all pre-trained models to reproduce results reported in our paper.
+Next, we will provide all pre-trained models to reproduce results reported in our paper. We recommend you to download them and put them into the folder pretrained_weights and run commands like below:
 
+```concolse
+python evaluate.py --model_file ../pretrianed_weights/multi.tar.gz --test_file ../dataset/Multi/test.txt
+```
 
 ## Pre-trained Models
 
