@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/ACL-2023-brightgreen">
-  <a href = '' target='_blank'><img src="http://img.shields.io/badge/Paper-PDF-red.svg"></a>
+  <a href = 'https://aclanthology.org/2023.acl-short.134.pdf' target='_blank'><img src="http://img.shields.io/badge/Paper-PDF-red.svg"></a>
   <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg">
 </p>
 
